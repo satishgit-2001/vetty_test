@@ -5,10 +5,10 @@
     <title>Text File content</title>
 </head>
 <body>
-    <h2>File content: </h2> 
+    <h2 align=center>File content for: <i>{{context.filename}}</i> </h2> 
     <div>
         <ul>
-            {% for line in lines %}
+            {% for line in context.lines %}
                 <p>{{ line }}</p>
             {% endfor %}
         </ul>
