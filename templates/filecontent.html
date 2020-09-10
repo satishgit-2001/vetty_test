@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Text File content</title>
+</head>
+<body>
+    <h2>File content: </h2> 
+    <div>
+        <ul>
+            {% for line in lines %}
+                <p>{{ line }}</p>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
